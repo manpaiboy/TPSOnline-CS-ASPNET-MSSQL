@@ -1,6 +1,6 @@
 ## DeVry Senior Project ##
-   @course CIS-470
-   @date August 2014
+>><p>@course CIS-470</p>
+>><p>@date August 2014</p>
 
 ### Team
 * Jeremy Adams
