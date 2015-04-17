@@ -1,0 +1,83 @@
+<!--
+    CIS 470 - July 2014    
+    DeVry Senior Project
+    Taylor's Professional Services e-commerce website
+    
+    Team C
+    Jeremy Adams
+    Taunyl Bailey
+    Tim Olson
+    Rachel Spiegelhoff
+    -->
+
+<%-- MasterPage.master
+    --------------------- Work Log -----------------------
+    7/18/2014 - JA - Designed and created main layout of website
+    7/18/2014 - JA - Added code to change visibility of buttons depending on if user is logged in
+    7/21/2014 - JA - Fixed login button
+    7/22/2014 - JA - Added meta description and keywords
+ --%>
+<%-- Default.aspx
+     -------------------- Work Log -----------------------
+     7/18/2014 - JA - Setup main layout
+     7/20/2014 - JA - Add images
+     7/23/2014 - RS - Write content
+     8/25/2014 - JA - Add team member images
+ --%>
+<!-- Register.aspx
+    --------------------- Work Log -----------------------
+    7/20/2014 - JA - Design and Build Registration form
+    7/21/2014 - JA - Add validation and encryption code and DB Inserts
+    7/22/2014 - JA - Added a panel to allow submitting on user pressing Enter
+ -->
+<!-- Login.aspx
+    --------------------- Work Log -----------------------
+    7/22/2014 - JA - Added user authentication forms and validation code
+ -->
+<!-- Account.aspx
+    --------------------- Work Log -----------------------
+    7/23/2014 - JA - Modify Register.aspx so this form can be used for updating user information rather than inserting it
+ -->
+<!-- Update_staff.aspx
+    --------------------- Work Log -----------------------
+    7/23/2014 - JA - Setup form fields
+    7/24/2014 - JA - Implement image uploads
+ -->
+<!-- Update_client.aspx
+    --------------------- Work Log -----------------------
+    7/30/2014 - JA - Setup form fields and code
+ -->
+<!-- View_staff.aspx
+    --------------------- Work Log -----------------------
+    7/30/14 - JA - Setup layout and code
+    7/31/14 - JA - Added code to check if staff member or max # of staff has already been requested
+ -->
+<!-- View_requests.aspx
+    --------------------- Work Log -----------------------
+    7/31/14 - JA - Begin coding from scratch
+ -->
+<!-- Manage_contracts.aspx
+    --------------------- Work Log -----------------------
+    7/28/14 - TB - Begin coding from scratch
+    8/2/14 - JA - Make some modifications to TB's code
+ -->
+ <!-- New_contract.aspx
+    --------------------- Work Log -----------------------
+    7/28/2014 - TB - Setup form fields
+    8/4/2014 - JA - Add db insert code
+ -->
+<!-- New_contract.aspx
+    --------------------- Work Log -----------------------
+    7/28/2014 - TB - Setup form fields
+    8/4/2014 - JA - Add db insert code
+ -->
+<!-- Find_staff.aspx
+    --------------------- Work Log -----------------------
+    8/3/14 - JA - Begin coding from scratch
+ -->
+<!-- Search.aspx
+    --------------------- Work Log -----------------------
+    8/4/14 - JA - Begin coding from scratch
+ -->
+
+

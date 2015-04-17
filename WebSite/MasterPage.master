@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<!--
+    DeVry Senior Project
+    CIS 470 - July 2014
+    Team C
+    Jeremy Adams
+    Taunyl Bailey
+    Tim Olson
+    Rachel Spiegelhoff
+    -->
+
+
+<%-- MasterPage.master
+    --------------------- Work Log -----------------------
+    7/18/2014 - JA - Designed and created main layout of website
+    7/18/2014 - JA - Added code to change visibility of buttons depending on if user is logged in
+    7/21/2014 - JA - Fixed login button
+    7/22/2014 - JA - Added meta description and keywords
+ --%>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="description" content="Taylor's Professional Services is a fictional technical and engineering staffing service that was created for DeVry senior projects. TPSonline.us was developed by Team C of a July 2014 CIS470 class." />
+    <meta name="keywords" content="Taylors, Taylor's, Professional, Services, staffing, DeVry, senior, project, tps, TPS, tpsonline, cis, 470, jeremy, adams, taunyl, bailey, tim, olson, rachel, spiegelhoff" />
+    <meta name="dc.keywords" content="Taylors, Taylor's, Professional, Services, staffing, DeVry, senior, project, tps, TPS, tpsonline, cis, 470, jeremy, adams, taunyl, bailey, tim, olson, rachel, spiegelhoff" />
+    <meta name="robots" content="ALL" />
+    <meta name="author" content="Team C: Jeremy Adams, Taunyl Bailey, Tim Olson, Rachel Spiegelhoff" />
+    <meta name="msvalidate.01" content="A1D20EB447B531BFDB032AA0018CC5AD" />
+    <meta name="google-site-verification" content="hI4kjdDeSgYSBeJKsA2APcEPy467MRXk_cpAiPPKY6M" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <link href="~/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <title>Taylor's Professional Services</title>
+    
+</head>
+<body>
+    <form id="form1" runat="server" enctype="multipart/form-data">
+        <div class="wrap"><%-- holds all content --%>
+            <div class="logo-container"><%-- container to align logo properly with page content --%>
+                <%-- TPS Logo --%>
+                <asp:Image ID="Image2" runat="server" BorderWidth="0px" ImageUrl="~/images/logo.png" />
+            </div>
+		    <div class="top-bar"><%-- black nav bar at top of page --%>
+                <div class="nav-container"><%-- Keeps nav content aligned properly --%>
+
+                    <div id="nav-left" class="float-left"><%-- Normal Navigation buttons --%>
+                        <asp:Button ID="BtnHome" class="btn btn-nav" runat="server" Text="Home" PostBackUrl="~/Default.aspx" />
+                        <asp:Button ID="BtnSearch" class="btn btn-nav" runat="server" Text="Search" PostBackUrl="~/Search.aspx" />
+                        <asp:Button ID="BtnContract" class="btn btn-nav" runat="server" Text="Contracts" PostBackUrl="~/Manage_contracts.aspx" />
+                        <asp:Button ID="BtnClient" class="btn btn-nav" runat="server" Text="Company" PostBackUrl="~/Update_client.aspx" />
+                        <asp:Button ID="BtnRequests" class="btn btn-nav" runat="server" Text="Requests" PostBackUrl="~/View_requests.aspx" />
+                        <asp:Button ID="BtnStaff" class="btn btn-nav" runat="server" Text="Resume" PostBackUrl="~/Update_staff.aspx" />
+                    </div>
+
+                    <div id="nav-right" class="float-right"><%-- Account Navigation Buttons --%>                        
+                        <asp:Button ID="BtnAcct" class="btn btn-primary" runat="server" Text="Account" PostBackUrl="~/Account.aspx" />
+                        <asp:Button ID="BtnLogout" class="btn btn-primary" runat="server" Text="Logout" OnClick="BtnLogout_Click" />
+                        <asp:Button ID="BtnReg" class="btn btn-primary" runat="server" Text="Register" PostBackUrl="~/Register.aspx" />
+                        <asp:Button ID="BtnLogin" class="btn btn-primary" runat="server" Text="Sign In" PostBackUrl="~/Login.aspx" /><%-- Temporary quick manager login --%>
+                    </div>              
+                </div>
+		    </div>
+            
+            <div class="main-container float-clear"><%-- Content Pages Displayed Here --%>
+                <asp:ContentPlaceHolder id="main" runat="server">
+        
+                </asp:ContentPlaceHolder>
+            </div>
+            
+            <div class="footer"><%-- Footer Content --%>
+                2014 Taylor's Professional Services<br />
+                DeVry - Senior Project<br />
+                Team C: Jeremy Adams, Taunyl Bailey, Tim Olson, Rachel Spiegelhoff<br />
+                <br />
+                Contact Us: <a href="mailto:info@tpsonline.us">info@tpsonline.us</a>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
